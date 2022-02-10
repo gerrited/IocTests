@@ -2,7 +2,9 @@
 using ConsoleApp.Ioc;
 using ConsoleApp.Interfaces;
 
-var container = new IocConfig().Create();
+var iocConfig = new IocConfig();
+var builder = iocConfig.GetBuilder();
+var container = builder.Build();
 
 var writer = container.Resolve<ITextWriter>();
 

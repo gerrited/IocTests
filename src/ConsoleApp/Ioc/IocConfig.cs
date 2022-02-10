@@ -6,13 +6,13 @@ namespace ConsoleApp.Ioc;
 
 public class IocConfig
 {
-    public IContainer Create()
+    public ContainerBuilder GetBuilder()
     {
         var builder = new ContainerBuilder();
         
         builder.RegisterType<ConsoleTextWriter>().As<ITextWriter>();
         builder.RegisterModule<TextGeneratorModule>();
 
-        return builder.Build();
+        return builder;
     }
 }
