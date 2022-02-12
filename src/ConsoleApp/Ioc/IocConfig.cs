@@ -11,7 +11,7 @@ public class IocConfig
         var builder = new ContainerBuilder();
         
         builder.RegisterType<ConsoleTextWriter>().As<ITextWriter>();
-        //builder.RegisterModule<TextGeneratorModule>();
+        builder.RegisterModule<TextGeneratorModule>();
 
         return builder;
     }
