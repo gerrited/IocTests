@@ -22,4 +22,4 @@ jobs:
     - name: Build
       run: dotnet build --no-restore src/TextGenerator.ConsoleApp.sln
     - name: Test
-      run: dotnet test --no-build --verbosity normal src/TextGenerator.ConsoleApp.sln
+      run: dotnet test --verbosity normal tests/ConsoleApp.UnitTests/ConsoleApp.UnitTests.csproj
