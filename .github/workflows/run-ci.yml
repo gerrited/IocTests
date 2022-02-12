@@ -18,8 +18,8 @@ jobs:
       with:
         dotnet-version: 6.0.x
     - name: Restore dependencies
-      run: dotnet restore src/TextGenerator.ConsoleApp.sln
+      run: dotnet restore
     - name: Build
-      run: dotnet build --no-restore src/TextGenerator.ConsoleApp.sln
+      run: dotnet build --no-restore
     - name: Test
-      run: dotnet test --verbosity normal tests/ConsoleApp.UnitTests/ConsoleApp.UnitTests.csproj
+      run: dotnet test --verbosity normal
