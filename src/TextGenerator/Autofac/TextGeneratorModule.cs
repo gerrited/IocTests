@@ -6,6 +6,6 @@ public class TextGeneratorModule : Module
 {
     protected override void Load(ContainerBuilder builder)
     {
-        //builder.RegisterType<RandomTextGenerator>().As<ITextGenerator>();
+        builder.RegisterType<RandomTextGenerator>().As<ITextGenerator>();
     }
 }
