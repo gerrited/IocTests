@@ -4,4 +4,4 @@
 
 Hey, how do you test your IoC config?
 
-[Unit-Tests für IoC Container](https://g11s.cc/posts/2022/02/unit-tests-f%C3%BCr-ioc-container/) (German Blog Post)
+[Unit-Tests für IoC Container](https://gerrit.codes/posts/2022/02/unit-tests-f%C3%BCr-ioc-container/) (German Blog Post)
